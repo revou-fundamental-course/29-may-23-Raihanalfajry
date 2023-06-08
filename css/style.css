@@ -1,0 +1,109 @@
+*{
+           box-sizing: border-box;
+           margin: 0px;
+           padding: 0px; 
+        }
+        .logo{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-right: auto;
+        }
+        .container{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               background-color: pink;
+               padding: 5px;
+               position: fixed;
+               width: 100%;
+        }
+        .oke li{
+            list-style: none;
+        }
+        .oke li a{
+            text-decoration: none;
+            color: black;
+        }
+        .oke li{
+            display: inline-block;
+            padding: 0px 5px;
+        }
+        .oke li a:hover{
+            display: block;
+            transform: scale(0.9);
+            border-top: 2px solid;
+            border-bottom: 2px solid;
+            border-top-color: black ;
+            border-bottom-color: blue ;
+        }
+        .ok{
+            padding-top: 30%;
+            background: url(oke2.jpeg);
+            background-size: cover; 
+            padding-bottom: 25%; 
+            
+        }
+        .lo{
+            color: white;
+            margin-left: 20px;
+
+        }
+        .container3{
+            background-color: rgb(186, 180, 180);
+            padding-top: 5%;
+            text-align: center;
+        }
+        .border{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 5%;
+            padding-bottom: 10%;
+        }
+        .image{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .isi{
+            text-align: center;
+        }
+        .ok3{
+            padding: 5px;
+        }
+        .formulir, .ok4{
+            width: 50%;
+        }
+        .formulir{
+            float: left;
+        }
+        .ok4{
+            float: right;
+        }
+        .button {
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            color: black;
+            background-color: aqua;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+        }
+        .foot{
+            display: block;
+            clear: both;
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+        }
+        .foot .ft:hover{
+            color: rgb(239, 13, 175);
+        }
