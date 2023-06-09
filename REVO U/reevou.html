@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+           box-sizing: border-box;
+           margin: 0px;
+           padding: 0px; 
+        }
+        .logo{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-right: auto;
+        }
+        .container{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               background-color: pink;
+               padding: 5px;
+               position: fixed;
+               width: 100%;
+        }
+        .oke li{
+            list-style: none;
+        }
+        .oke li a{
+            text-decoration: none;
+            color: black;
+        }
+        .oke li{
+            display: inline-block;
+            padding: 0px 5px;
+        }
+        .oke li a:hover{
+            display: block;
+            transform: scale(0.9);
+            border-top: 2px solid;
+            border-bottom: 2px solid;
+            border-top-color: black ;
+            border-bottom-color: blue ;
+        }
+        .ok{
+            padding-top: 30%;
+            background: url(oke2.jpeg);
+            background-size: cover; 
+            padding-bottom: 25%; 
+            
+        }
+        .lo{
+            color: white;
+            margin-left: 20px;
+
+        }
+        .container3{
+            background-color: rgb(186, 180, 180);
+            padding-top: 5%;
+            text-align: center;
+        }
+        .border{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 5%;
+            padding-bottom: 10%;
+        }
+        .image{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .isi{
+            text-align: center;
+        }
+        .ok3{
+            padding: 5px;
+        }
+        .formulir, .ok4{
+            width: 50%;
+        }
+        .formulir{
+            float: left;
+        }
+        .ok4{
+            float: right;
+        }
+        .button {
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            color: black;
+            background-color: aqua;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+        }
+        .foot{
+            display: block;
+            clear: both;
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+        }
+        .foot .ft:hover{
+            color: rgb(239, 13, 175);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container">
+    <img class= "logo" src="OIP.jpg" alt="logo">
+     <ul class="oke">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Profile</a></li>
+        <li><a href="#">Portofolio</a></li>
+        <li><a href="#">Message Us</a></li>
+     </ul>
+</div>
+<div class="ok">
+    <div class="lo">
+        <h3> Hi Harfi, Welcome To website</h3>
+        <p>Ini adalah website latihan pertama</p>
+    </div>
+ </div>
+
+    <!-- Status -->
+    <div class="container3">
+        <h2>Layanan</h2>
+        <div class="border">
+            <div class="satu">
+                <img class="image" src="https://www.fodors.com/wp-content/uploads/2019/08/jakarta-hero-3.jpg" alt="">
+                <p class="isi">Jakarta</p>
+            </div>
+            <div class="satu">
+                <img class="image" src="https://storage.googleapis.com/allindonesiatoursim/2019/08/b5ebe329-bandung.jpg" alt="">
+                <p class="isi">Bandung</p>
+            </div>
+            <div class="satu">
+                <img class="image" src="https://images.pexels.com/photos/2749481/pexels-photo-2749481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                <p class="isi">Yogyakarta</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- form -->
+ <div class="ok3">
+    <div class="formulir">
+    <form action="" method="post">
+        <fieldset>
+            <legend>Message Us</legend>
+            <table border="0" width="100%">
+                <tr>
+                    <td><label>Nama</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" placeholder="Nama lengkap..." /></td>
+                </tr>
+                <tr>
+                    <td><label>Tanggal Lahir</label></td>
+                    <td>:</td>
+                    <td><input type="date" name="tgl" placeholder="Tanggal Lahir..." /></td>
+                </tr>
+                <tr>
+                    <td><label>Jenis kelamin</label></td>
+                    <td>:</td>
+                    <td><label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+                        <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label></td>
+                </tr>
+                <tr>
+                    <td><label>Pesan</label></td>
+                    <td>:</td>
+                    <td><textarea name="biografi"></textarea></td>
+                </tr>
+            <tr>
+                <td><input class="button" type="button" value="submit"></td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+ </div>
+ <div class="ok4">
+    <fieldset>
+        <legend>Hasil</legend>
+        <p></p>
+    </fieldset>
+</div>
+</div>
+  <!-- Footer -->
+  <div class="foot">
+    © 202 Copyright :
+    <a class="ft" href="#">portal.com</a>
+</div>
+</body>
+</html>
